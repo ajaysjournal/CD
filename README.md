@@ -9,8 +9,7 @@ It will be Running on http://0.0.0.0:1527/
 
 If you want to load your own database, check the notebook[Data Load Notebook](data-load-mongodb.ipynb) on how to load the database to local MongoDB. 
 
-
-![WebUI]('webui-ver1.gif')
+<img src="webui-ver1.gif"/>
 
 
 
