@@ -1,9 +1,0 @@
-Section 1: Dataset Description
-Section 2: Model Fit BasicS
-Section 3: Artificial Labeling
-Section 4: Active Learning using Tandem Learning
-Section 5: Human Labeled Doc Preview
-Section 6: Active Learning with Rationale
-Section 8: Future works
-Section 9: CD - ByProduct of IML
-

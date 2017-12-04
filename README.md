@@ -1,5 +1,7 @@
 # CD
 
+Check the [report.pdf](report.pdf)
+
 [Main-Notebook](notebook/IML-Project-Final.ipynb)
 
 ## Run Web App for Labelling
