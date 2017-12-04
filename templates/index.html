@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Label Me</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href=/static/bootstrap.min.css>
+    <script src="/static/jquery.min.js"></script>
+    <script src="/static/tether.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
+
+
+    <script src="/static/main.js"></script>
+    <link rel="stylesheet" href="/static/main.css">
+</head>
+<body>
+
+
+<div class="container-fluid">
+    <div class="jumbotron">
+        <h1 class="display-3">Label Me!</h1>
+        <h3>Pick Rationales for Amazon Reviews ?</h3>
+        <h2><span class="badge badge-info"> Examples</span></h2>
+        <span class="badge badge-default"> Doc-1:</span>: This is a <span
+            class="badge badge-success"> great </span> movie.<br>
+        <span class="badge badge-default"> Doc-2:</span>: I’ve seen this at an outdoor cinema; great atmosphere. The movie
+        was &nbsp;<span
+            class="badge badge-success"> terrific.</span><br>
+        <span class="badge badge-default"> Doc-3:</span>:The plot was great, but the performance
+        of the actors was <span class="badge badge-success"> terrible</span>. <span
+            class="badge badge-success"> Avoid</span> it.
+        <br> <br>
+        <p>Highlighted <span class="badge badge-success"> green</span> words are rationales in those docs.</p>
+
+         <p class="lead">
+            <a class="btn btn-primary btn-sm" href="/alwr" role="button">Goto to Active Learning Page</a>
+        </p>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-3">Review </h1>
+        <h2><span
+                class="badge badge-danger">Click on the word to make it Rationale</span></h2>
+        <h5> <span class="badge badge-default" > User Rating: </span> <span class="badge badge-warning" > {{ rating }} </span></h5>
+        <h6><span class="badge badge-primary" style="display: none" id="object_id"
+                  value="{{ object_id }}">ID:{{ object_id }}</span></h6><br>
+        <a href="{{ url }}">Product URL : {{ url }}</a><br> <br>
+
+
+        {% for word in words %}
+            <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-default">
+                    <input name="labelme" type="checkbox" value="{{ word.text }}" autocomplete="off"> {{ word.text }}
+                </label>
+            </div>
+        {% endfor %}
+
+        <br>
+        <br><br>
+        <form id="save">
+            <button type="submit" class="btn btn-outline-success">Save</button>
+        </form>
+        <br>
+    </div>
+    <div class="jumbotron">
+        <h1 class="display-3">CS @ IIT Chicago </h1>
+        <span class="badge badge-default" >All data used for Educational Purpose only </span><hr>
+        <a href="http://www.cs.iit.edu/~ml/pdfs/sharma-naaclhlt15.pdf"> Reference -
+            http://www.cs.iit.edu/~ml/pdfs/sharma-naaclhlt15.pdf </a>
+        <p> contact me - ajaycs14@gmail.com</p>
+        Public Repository Avaiable after 12/10/2017 at
+        <a href="https://github.com/ajayramesh23/IML"> https://github.com/ajayramesh23/IML </a>
+    </div>
+</div>
+
+
+</body>
+</html>

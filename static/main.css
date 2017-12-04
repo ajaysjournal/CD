@@ -1,0 +1,15 @@
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+body {
+    margin: 10px;
+}
+button:focus {outline:0;}
+
+.rationale{
+    /*background-color: #ffee88;*/
+}
+
+.non_rationale{
+
+}
