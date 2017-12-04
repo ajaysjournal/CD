@@ -1,6 +1,6 @@
 # CD
 
-[Notebook]  (notebook/IML-Project-Final.ipynb)
+[Main-Notebook](notebook/IML-Project-Final.ipynb)
 
 ## Run Web App for Labelling
 `python CD.py`
