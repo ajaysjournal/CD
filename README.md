@@ -1,6 +1,6 @@
 # CD
 
-Check the [report.pdf](report.pdf)
+Check the [report.pdf](Report.pdf)
 
 [Main-Notebook](notebook/IML-Project-Final.ipynb)
 
